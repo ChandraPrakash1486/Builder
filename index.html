@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Browser-Based IDE</title>
     <script src="https://unpkg.com/@excalidraw/excalidraw@latest/dist/excalidraw.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+
+
     <style>
         #editor {
             width: 70vw;
@@ -26,6 +31,11 @@
     <ul id="file-list"></ul>
     <div id="whiteboard"></div>
     <div id="terminal"></div>
+    <div id="editor"></div>
+    <button onclick="runJavaScript()">Run JavaScript</button>
+    <button onclick="runPython()">Run Python</button>
+    <pre id="output"></pre>
+
 
 </body>
 
