@@ -1,0 +1,17 @@
+{
+  "name": "builer.ide",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fabric": "^6.5.4",
+    "monaco-editor": "^0.52.2",
+    "xterm": "^5.3.0"
+  }
+}

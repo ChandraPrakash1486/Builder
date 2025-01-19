@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser-Based IDE</title>
+    <script src="https://unpkg.com/@excalidraw/excalidraw@latest/dist/excalidraw.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.min.js"></script>
+    <style>
+        #editor {
+            width: 70vw;
+            height: 80vh;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2>Browser-Based IDE</h2>
+    <div id="editor"></div>
+    <button onclick="saveFile()">Save File</button>
+    <input type="file" webkitdirectory multiple onchange="loadFolder(event)" />
+    <ul id="file-list"></ul>
+    <div id="whiteboard"></div>
+    <div id="terminal"></div>
+
+</body>
+
+</html>
